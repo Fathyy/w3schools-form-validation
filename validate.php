@@ -1,28 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+<style>
         .error{
             color: #FF0000;
         }
-    </style>
+    </style>  
 </head>
 <body>
-    
-</body>
-</html>
-
-
-
-
+<!-- define variables and then set to empty -->
 <?php
-// define variables and set to empty values
 $nameErr = $emailErr = $genderErr = $websiteErr ="";
-$name= $email= $gender = $website = "";
-
+$name= $email= $gender = $comment= $website = "";
 
 if($_SERVER["REQUEST_METHOD"] == "POST")
 {
@@ -57,9 +46,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST")
         $website= test_input($_POST["website"]);
         //check if url syntax is valid. This regex also
         //allows dashes in the url
-        if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i", $website)) {
+        if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$website)) {
             $websiteErr="Invalid url";
         }
+    }
+
+    if(empty($_POST["comment"])){
+        $comment ="";
+    }
+    else{
+        $comment = test_input($_POST["comment"]);
     }
 
 
@@ -76,44 +72,59 @@ function test_input($data){
     $data=trim($data);
     $data=stripslashes($data);
     $data=htmlspecialchars($data);
-
+    return $data;
 }
-
 ?>
+<h2>PHP form Validation example</h2>
 <p><span class="error">* required field</span></p>
+
 <form method="post" action="<?php echo 
     htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 
     Name:
-    <input type="text" name="name" value="<?php echo $name;?>">
+    <input type="text" name="name">
     <span class="error">* <?php echo $nameErr;?></span>
     <br><br>
 
     Email:
-    <input type="email" name="email" value="<?php echo $email;?>">
+    <input type="email" name="email">
     <span class="error">* <?php echo $emailErr;?></span>
     <br><br>
 
     Website:
-    <input type="text" name="website" value="<?php echo $website;?>">
+    <input type="text" name="website">
     <span class="error">* <?php echo $websiteErr;?></span>
     <br><br>
 
-    Gender:
-    <input type="radio" name="gender" 
-    <?php if(isset($gender) && $gender=="female") echo "checked"?>
-    value="female">Female
+    Comment: 
+    <textarea name="comment" cols="30" rows="10"></textarea>
 
-    <input type="radio" name="gender"
-    <?php if(isset($gender) && $gender=="male") echo "checked"?>
-    value="male">male
+    Gender:
+    <input type="radio" name="gender" value="female">Female
+
+    <input type="radio" name="gender" value="male">male
     
-    <input type="radio" name="gender"
-    <?php if (isset($gender) && $gender=="other") echo "checked";?>
-     value="other">other
-    <span class="error">* <?php echo $genderErr;?></span>
+    <input type="radio" name="gender" value="other">other
     <br><br>
 
     <input type="submit" value="Submit">
 
     </form>
+
+    <?php
+    echo "<h2> Your input </h2>";
+    echo $name;
+    echo "<br>";
+    echo $email;
+    echo "<br>";
+    echo $website;
+    echo "<br>";
+    echo $comment;
+    echo "<br>";
+    echo $gender;
+    echo "<br>";
+    ?>
+
+</body>
+</html>
+
