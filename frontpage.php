@@ -7,25 +7,8 @@
     <script src="js\bootstrap.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Document</title>
-    
-    <style>
-        :root{
-    --primary-color:#845EC2;
-    --secondary-color:#4E8397;
-    --tertiary-color:#D5CABD;
-}
-.navbar{
-    background: var(--tertiary-color);
-}
-.navbar-nav, .nav-item{
-    padding-right: 2rem;
-}
-.navbar-nav, .nav-item, .nav-link{
-    color: var(--primary-color);
-}
-    </style>
-
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -66,6 +49,28 @@
       </form>
     </div>
   </div>
-</nav>   
+</nav>
+   <!--Navigation section ends here  -->
+
+   <!-- image-heading section begins -->
+   <div class="container-fluid">
+     <div class="row">
+       <div class="col-sm-8 col-md-7 col-lg-6">
+         <h4 class="heading">Lorem ipsum dolor sit amet.</h4>
+         <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+         <button>Shop Now</button>
+        </div>
+       <!-- First colum ends -->
+       <div class="col-sm-4 col-md-5 col-lg-6">
+         <img src="images\roman-shilin-12ybyCCwXYU-unsplash.jpg" class="roman-image" alt="">
+       </div>
+
+     </div>
+   </div>
+   <!-- image-heading setion ends here -->
+
+   <!-- New arrivals section begins here -->
+   
+
 </body>
 </html>
