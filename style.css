@@ -1,26 +1,6 @@
-
-:root{
-    --primary-color:#845EC2;
-    --secondary-color:#4E8397;
-    --tertiary-color:#D5CABD;
-}
-.navbar{
-    background: var(--primary-color);
-}
-.navbar-nav, .nav-item{
-    padding-right: 2rem;
-}
-.navbar-nav, .nav-item, .nav-link{
-    color: var(--primary-color);
-}
-/* Navbar styling ends here */
-.container-fluid{
-   max-height: 43.75rem; 
-   background-color: gray;
-}
-
-.roman-image{
-    max-width: 100%;
-    height: 100%;
-    object-fit: cover;  
+ul{
+    list-style-type: none;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
 }

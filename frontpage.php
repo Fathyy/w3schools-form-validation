@@ -7,7 +7,7 @@
     <script src="js\bootstrap.min.js"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style.php" type="text/css">
     <title>Document</title>
 </head>
 <body>
@@ -53,16 +53,16 @@
    <!--Navigation section ends here  -->
 
    <!-- image-heading section begins -->
-   <div class="container-fluid">
+   <div class="container-fluid image-heading">
      <div class="row">
        <div class="col-sm-8 col-md-7 col-lg-6">
          <h4 class="heading">Lorem ipsum dolor sit amet.</h4>
          <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
-         <button>Shop Now</button>
+         <button class="shop-now">Shop Now</button>
         </div>
        <!-- First colum ends -->
        <div class="col-sm-4 col-md-5 col-lg-6">
-         <img src="images\roman-shilin-12ybyCCwXYU-unsplash.jpg" class="roman-image" alt="">
+         <img src="images\roman-shilin-12ybyCCwXYU-unsplash-removebg-preview.png" class="roman-image" alt="">
        </div>
 
      </div>
@@ -70,6 +70,125 @@
    <!-- image-heading setion ends here -->
 
    <!-- New arrivals section begins here -->
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-12">
+         <h1 class="text-center">New Arrivals</h1>
+       </div>
+       <div class="col-sm-12">
+         <ul class="items-type">
+           <li class="examples">All</li>
+           <li class="examples">Womens</li>
+           <li class="examples">Accessories</li>
+           <li class="examples">Mens</li>
+         </ul>
+       </div>
+     </div>
+   </div>
+   <!-- New arrivals section ends here -->
+   <div class="container">
+     <div class="row">
+       <div class="col-sm-6 col-md-6 col-lg-6">
+
+       <div class="card" style="width: 18rem;">
+  <img src="images\laptop2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="images\laptop3.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="images\laptop4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="images\laptop5.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="images\phone2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+<!-- First column ends here  -->
+
+<!-- Second column starts here -->
+<div class="col-sm-6 col-md-6 col-lg-6">
+       <div class="card" style="width: 18rem;">
+  <img src="images\laptop2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="images\laptop3.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="images\laptop4.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="images\laptop5.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img src="images\phone2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+       
+
+
+
+</div>
+     </div>
+   </div>
    
 
 </body>
